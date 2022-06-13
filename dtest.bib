@@ -1418,13 +1418,32 @@
   abstract = {One of the leading textbooks for formal methods is Software Foundations (SF), written by Benjamin Pierce in collaboration with others, and based on Coq. After five years using SF in the classroom, we came to the conclusion that Coq is not the best vehicle for this purpose, as too much of the course needs to focus on learning tactics for proof derivation, to the cost of learning programming language theory. Accordingly, we have written a new textbook, Programming Language Foundations in Agda (PLFA). PLFA covers much of the same ground as SF, although it is not a slavish imitation. What did we learn from writing PLFA? First, that it is possible. One might expect that without proof tactics that the proofs become too long, but in fact proofs in PLFA are about the same length as those in SF. Proofs in Coq require an interactive environment to be understood, while proofs in Agda can be read on the page. Second, that constructive proofs of preservation and progress give immediate rise to a prototype evaluator. This fact is obvious in retrospect but it is not exploited in SF (which instead provides a separate normalise tactic) nor can we find it in the literature. Third, that using extrinsically-typed terms is far less perspicuous than using intrinsically-typed terms. SF uses the former presentation, while PLFA presents both; the former uses about 1.6 as many lines of Agda code as the latter, roughly the golden ratio. The textbook is written as a literate Agda script, and can be found here: http://plfa.inf.ed.ac.uk}
 }
 
-@article{knowles2008compositional,
+@techreport{knowles2008compositional,
   title   = {Compositional and Decidable Checking for Dependent Contract Types},
   author  = {Knowles, Kenneth and Flanagan, Cormac},
   journal = {Contract},
   pages   = {1--11},
   year    = {2008}
 }
+
+@inproceedings{10.1145/1481848.1481853,
+author = {Knowles, Kenneth and Flanagan, Cormac},
+title = {Compositional Reasoning and Decidable Checking for Dependent Contract Types},
+year = {2009},
+isbn = {9781605583303},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1481848.1481853},
+doi = {10.1145/1481848.1481853},
+abstract = {Simple type systems perform compositional reasoning in that the type of a term depends only on the types of its subterms, and not on their semantics. Contracts offer more expressive abstractions, but static contract checking systems typically violate those abstractions and base their reasoning directly upon the semantics of terms. Pragmatically, this noncompositionality makes the decidability of static checking unpredictable.We first show how compositional reasoning may be restored using standard type-theoretic techniques, namely existential types and subtyping. Despite its compositional nature, our type system is exact, in that the type of a term can completely capture its semantics, hence demonstrating that precision and compositionality are compatible. We then address predictability of static checking for contract types by giving a type-checking algorithm for an important class of programs with contract predicates drawn from a decidable theory. Our algorithm relies crucially on the fact that the type of a term depends only the types of its subterms (which fall into the decidable theory) and not their semantics (which will not, in general).},
+booktitle = {Proceedings of the 3rd Workshop on Programming Languages Meets Program Verification},
+pages = {27-–38},
+numpages = {12},
+keywords = {abstraction, dependent types, refinement types, compositional reasoning},
+location = {Savannah, GA, USA},
+series = {PLPV '09}
+}
+
 
 @inproceedings{10.1007/978-3-540-85373-2_15,
   author    = {Herhut, Stephan
@@ -2566,4 +2585,45 @@
   author    = {Hassan, Wajih Ul and Mark, Lemay and Aguse, Nuraini and Bates, Adam and Moyer, Thomas},
   booktitle = {Network and Distributed Systems Security Symposium},
   year      = {2018}
+}
+
+@book{streicher2006domain,
+  title={Domain-theoretic foundations of functional programming},
+  author={Streicher, Thomas},
+  year={2006},
+  publisher={World Scientific Publishing Company}
+}
+
+@techreport{veldhuizen2003,
+  title={C++ templates are turing complete},
+  author={Veldhuizen, Todd L},
+  year={2003},
+  institution = {Indiana University Computer Science}
+}
+
+@article{10.1145/3093333.3009871,
+author = {Grigore, Radu},
+title = {Java Generics Are Turing Complete},
+year = {2017},
+issue_date = {January 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {1},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/3093333.3009871},
+doi = {10.1145/3093333.3009871},
+abstract = { This paper describes a reduction from the halting problem of Turing machines to subtype checking in Java. It follows that subtype checking in Java is undecidable, which answers a question posed by Kennedy and Pierce in 2007. It also follows that Java's type checker can recognize any recursive language, which improves a result of Gill and Levy from 2016. The latter point is illustrated by a parser generator for fluent interfaces. },
+journal = {SIGPLAN Not.},
+month = {jan},
+pages = {73–85},
+numpages = {13},
+keywords = {parser generator, fluent interface, decidability, Turing machine, Java, subtype checking}
+}
+
+@online{Rossberg1999OCaml,
+  author = {Rossberg, Andreas},
+  title = {Undecidability of OCaml type checking},
+  year = 1999,
+  url = {https://caml.inria.fr/pub/old_caml_site/caml-list/1507.html}
 }
