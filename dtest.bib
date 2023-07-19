@@ -118,7 +118,8 @@
   author    = {Sj{\"o}berg, Vilhelm and Weirich, Stephanie},
   booktitle = {Proceedings of the 42nd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
   pages     = {369--382},
-  year      = {2015}
+  year      = {2015},
+  doi      = {https://doi.org/10.1145/2676726.2676974}
 }
 
 
@@ -981,6 +982,7 @@
   address   = {Boston, MA},
   pages     = {437--450},
   abstract  = {Dependent type systems are promising tools programmers can use to increase the reliability and security of their programs. Unfortunately, dependently-typed programming languages require programmers to annotate their programs with many typing specifications to help guide the type checker. This paper shows how to make the process of programming with dependent types more palatable by defining a language in which programmers have fine-grained control over the trade-off between the number of dependent typing annotations they must place on programs and the degree of compile-time safety. More specifically, certain program fragments are marked dependent, in which case the programmer annotates them in detail and a dependent type checker verifies them at compile time. Other fragments are marked simple, in which case they may be annotation-free and dependent constraints are verified at run time.},
+  doi        = {https://doi.org/10.1007/1-4020-8141-3_34},
   isbn      = {978-1-4020-8141-5}
 }
 
@@ -1082,6 +1084,7 @@
   address   = {Berlin, Heidelberg},
   pages     = {1--16},
   abstract  = {We introduce the blame calculus, which adds the notion of blame from Findler and Felleisen's contracts to a system similar to Siek and Taha's gradual types and Flanagan's hybrid types. We characterise where positive and negative blame can arise by decomposing the usual notion of subtype into positive and negative subtypes, and show that these recombine to yield naive subtypes. Naive subtypes previously appeared in type systems that are unsound, but we believe this is the first time naive subtypes play a role in establishing type soundness.},
+  doi       = {https://doi.org/10.1007/978-3-642-00590-9_1},
   isbn      = {978-3-642-00590-9}
 }
 
@@ -1592,6 +1595,7 @@ series = {PLPV '09}
   address   = {Berlin, Heidelberg},
   pages     = {53--62},
   abstract  = {We present a denotational semantics of a type system with dependent types, where types are interpreted as finitary projections. We prove then the correctness of a type-checking algorithm w.r.t. this semantics. In this way, we can justify some simple optimisation in this algorithm. We then sketch how to extend this semantics to allow a simple record mechanism with manifest fields.},
+  doi        = {https://doi.org/10.1007/3-540-45842-5_4},
   isbn      = {978-3-540-45842-5}
 }
 
@@ -1722,6 +1726,7 @@ series = {PLPV '09}
   address   = {Cham},
   pages     = {359--374},
   abstract  = {Reasoning about syntax with binders plays an essential role in the formalization of the metatheory of programming languages. While the intricacies of binders can be ignored in paper proofs, formalizations involving binders tend to be heavyweight. We present a discipline for syntax with binders based on de Bruijn terms and parallel substitutions, with a decision procedure covering all assumption-free equational substitution lemmas. The approach is implemented in the Coq library Autosubst, which additionally derives substitution operations and proofs of substitution lemmas for custom term types. We demonstrate the effectiveness of the approach with several case studies, including part A of the POPLmark challenge.},
+  doi      = {https://doi.org/10.1007/978-3-319-22102-1_24},
   isbn      = {978-3-319-22102-1}
 }
 
@@ -1771,6 +1776,7 @@ series = {PLPV '09}
   abstract = {We present an approach to enriching the type system of ML with a restricted form of dependent types, where type index terms are required to be drawn from a given type index language ${\cal L}$ that is completely separate from run-time programs, leading to the DML(${\cal L}$) language schema. This enrichment allows for specification and inference of significantly more precise type information, facilitating program error detection and compiler optimization. The primary contribution of the paper lies in our language design, which can effectively support the use of dependent types in practical programming. In particular, this design makes it both natural and straightforward to accommodate dependent types in the presence of effects such as references and exceptions. PUBLICATION ABSTRACT]},
   keywords = {Computers},
   isbn     = {09567968},
+  doi        = {https://doi.org/10.1017/S0956796806006216},
   language = {English}
 }
 
@@ -1953,6 +1959,7 @@ series = {PLPV '09}
   address   = {Berlin, Heidelberg},
   pages     = {197--216},
   abstract  = {Elimination rules tell us how we may exploit hypotheses in the course of a proof. Many common elimination rules, such as ∨-elim and the induction principles for inductively defined datatypes and relations, are parametric in their conclusion. We typically instantiate this parameter with the goal we are trying to prove, and acquire subproblems specialising this goal to particular circumstances in which the eliminated hypothesis holds. This paper describes a generic tactic, Elim, which supports this ubiquitous idiom in interactive proof and subsumes the functionality of the more specific `induction' and `inversion' tactics found in systems like Coq and Lego[6][7][15]. Elim also supports user-derived rules which follow the same style.},
+  doi      = {https://doi.org/10.1007/3-540-45842-5_13},
   isbn      = {978-3-540-45842-5}
 }
 
@@ -2549,6 +2556,7 @@ series = {PLPV '09}
   address   = {Berlin, Heidelberg},
   pages     = {40--55},
   abstract  = {The recent success of languages like Agda and Coq demonstrates the potential of using dependent types for programming. These systems rely on many high-level features like datatype definitions, pattern matching and implicit arguments to facilitate the use of the languages. However, these features complicate the metatheoretical study and are a potential source of bugs.},
+  doi     = {https://doi.org/10.1007/978-3-642-12251-4_5},
   isbn      = {978-3-642-12251-4}
 }
 
@@ -2637,19 +2645,27 @@ year="1974",
 publisher="Springer Berlin Heidelberg",
 address="Berlin, Heidelberg",
 pages="408--425",
+  doi     = {https://doi.org/10.1007/3-540-06859-7_148},
 isbn="978-3-540-37819-8"
 }
 
 @inproceedings{Siek:2007,
   title={Gradual typing for objects},
   author={Siek, Jeremy and Taha, Walid},
+editor="Ernst, Erik",
   booktitle={European Conference on Object-Oriented Programming},
-  year={2007}
+  year={2007},
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="2--27",
+abstract="Static and dynamic type systems have well-known strengths and weaknesses. In previous work we developed a gradual type system for a functional calculus named {\$}{\backslash}lambda^?{\_}{\backslash}to{\$}. Gradual typing provides the benefits of both static and dynamic checking in a single language by allowing the programmer to control whether a portion of the program is type checked at compile-time or run-time by adding or removing type annotations on variables. Several object-oriented scripting languages are preparing to add static checking. To support that work this paper develops {\$}{\backslash}mathbf{\{}Ob{\}}^{\{}?{\}}{\_}{\{}<:{\}}{\$}, a gradual type system for object-based languages, extending the Ob<{\thinspace}: calculus of Abadi and Cardelli. Our primary contribution is to show that gradual typing and subtyping are orthogonal and can be combined in a principled fashion. We also develop a small-step semantics, provide a machine-checked proof of type safety, and improve the space efficiency of higher-order casts.",
+  doi     = {https://doi.org/10.1007/978-3-540-73589-2_2},
+isbn="978-3-540-73589-2"
 }
-
 @inproceedings{Tobin:2006,
   title={Interlanguage migration: From scripts to programs},
   author={Tobin-Hochstadt, Sam and Felleisen, Matthias},
   booktitle={ACM SIGPLAN Symposium on Object-oriented Programming Systems, Languages, and Applications},
+    doi     = {https://doi.org/10.1145/1176617.1176755},
   year={2006}
 }
